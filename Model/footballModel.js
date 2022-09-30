@@ -1,6 +1,4 @@
 const mongoose = require('mongoose')
-const {password} = require('../password');
-// undefined
 const dotenv = require('dotenv');   
 dotenv.config();
 
