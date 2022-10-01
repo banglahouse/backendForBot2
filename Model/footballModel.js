@@ -1,8 +1,5 @@
 const mongoose = require('mongoose')
-// const {password} = require('../password');
-// undefined
-const dotenv = require('dotenv');   
-dotenv.config();
+
 
 const dblink =`mongodb+srv://banglahouse:Madarchod1.@cluster0.uy04bh7.mongodb.net/?retryWrites=true&w=majority`
 mongoose.connect(dblink)
