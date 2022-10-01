@@ -1,23 +1,18 @@
 const mongoose = require('mongoose')
-// const {password} = require('../password');
-// undefined
-const dotenv = require('dotenv');   
-dotenv.config();
+
+
+
 
 const dblink =`mongodb+srv://banglahouse:Madarchod1.@cluster0.uy04bh7.mongodb.net/?retryWrites=true&w=majority`
 mongoose.connect(dblink)
 .then(function(db){
-    // var collection = db.Collection('footballmodels');
-    
-        console.log('db connected' )
-
+    console.log('nba db connected')
 })
 .catch(function(err){
     console.log(err);
 })
 
-
-const urlsForFootball = new mongoose.Schema({
+const urlsForNFL = new mongoose.Schema({
     title:{
         type: String,
         required: [true]
@@ -34,10 +29,10 @@ const urlsForFootball = new mongoose.Schema({
         type:String,
     }
 })
+const nflModel = mongoose.model('nflModel',urlsForNFL)
 
 
 
-const footballModel = mongoose.model('footballModel',urlsForFootball)
 
-module.exports = footballModel
-// console.log(conn);
+
+module.exports = nflModel

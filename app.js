@@ -7,7 +7,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 const footballRouter = require('./footballRouter')
-
+const cricketRouter = require('./cricketRouter');
+const tennisRouter = require('./tennisRouter');
+const nbaRouter = require('./nbaRouter');
+const nflRouter = require('./nflRouter');
+const f1Router = require('./f1Router');
 
 
 const port = process.env.PORT || 5000;
@@ -18,3 +22,8 @@ console.log('Server started at http://localhost:' + port);
 
 
 app.use('/botwebsites',footballRouter)
+app.use('/botwebsites',cricketRouter)
+app.use('/botwebsites',tennisRouter)
+app.use('/botwebsites',nbaRouter)
+app.use('/botwebsites',nflRouter)
+app.use('/botwebsites',f1Router)
