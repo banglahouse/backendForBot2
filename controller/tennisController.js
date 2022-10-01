@@ -1,5 +1,5 @@
 // const footballModel = require('../Model/footballModel');
-const tennisModel = require('../Model/tennismodel');
+const tennisModel = require('../Model/tennisModel');
 
 
 module.exports.getAllTennisWebsites = async function getAllWebsite(req, res) {
