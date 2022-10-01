@@ -1,8 +1,7 @@
 const mongoose = require('mongoose')
-const dotenv = require('dotenv');   
-dotenv.config();
 
-const dblink =`mongodb+srv://banglahouse:${process.env.PASSWORD}@cluster0.uy04bh7.mongodb.net/?retryWrites=true&w=majority`
+
+const dblink =`mongodb+srv://banglahouse:Madarchod1.@cluster0.uy04bh7.mongodb.net/?retryWrites=true&w=majority`
 mongoose.connect(dblink)
 .then(function(db){
     // var collection = db.Collection('footballmodels');
